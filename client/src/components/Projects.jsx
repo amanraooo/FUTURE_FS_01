@@ -6,21 +6,40 @@ const Projects = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+  const dummyProjects = [
+    {
+      _id: "1",
+      title: "StudyNotion",
+      description: "A fully-featured edtech platform built with MERN stack.",
+      imageUrl: "/SNLogo.webp",
+      technologies: ["MongoDB", "Express", "React", "Node.js"],
+      liveUrl: "https://studynotion-frontend.vercel.app/",
+      githubUrl: "https://github.com/yourusername/studynotion"
+    },
+    {
+      _id: "2",
+      title: "Chattu Chat app",
+      description: "Real-time chat app with End to end Encryption, instant messaging and file sharing,",
+      imageUrl: "/Chattu.webp",
+      technologies: ["Tailwind"," MongoDB", "React", "Redux"," Express" , "Socket.io"],
+      liveUrl: "https://chatapp-frontend-orcin.vercel.app/",
+      githubUrl: "https://github.com/amanraooo/EchoChat-main"
+    },
+    {
+      _id: "3",
+      title: "Job Hunt",
+      description: "Built scalable Job hunting web app with responsive UI.",
+      imageUrl: "/jbh.webp",
+      technologies: ["Tailwind"," MongoDB", "React", "Redux" ,"Typescript"],
 
-    const fetchProjects = async () => {
-      try {
-        const res = await axios.get("http://localhost:5000/api/projects");
-        setProjects(res.data);
-      } catch (error) {
-        console.error("Error fetching projects:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+      liveUrl: "",
+      githubUrl: "https://github.com/amanraooo/HireMap-main"
+    }
+  ];
 
-    fetchProjects();
-  }, []);
+  setProjects(dummyProjects);
+  setLoading(false);
+}, []);
 
   if(loading) return <></>
 

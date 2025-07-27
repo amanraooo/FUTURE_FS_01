@@ -22,7 +22,7 @@ const About = () => {
                         About Me
                     </h1>
                     <p className="lead">
-                      I am Ankit Jha, originally from Bihar, India, and currently pursuing a Master of Computer Applications (MCA) at RGPV University. With a strong focus on web development, I specialize in building robust web applications using the MERN stack. I am actively seeking opportunities in the web development field to further enhance my skills and contribute to cutting-edge projects.
+                      Hey! I'm <strong>Aman Gaade</strong> — a passionate and self-driven Full Stack Developer, currently working with the <strong>MERN stack</strong>. I love building websites and applications that are not just functional, but also intuitive and visually engaging.
                         
                     </p>
                     

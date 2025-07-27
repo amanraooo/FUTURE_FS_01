@@ -6,13 +6,14 @@ const Hero = () => {
 
             <img
                 className="d-block mx-auto mb-4 shadow border"
-                src="https://ankitjha.vercel.app/_next/image?url=%2Fankit.png&w=640&q=75"
-                alt="Ankit Jha"
+                //src="https://ankitjha.vercel.app/_next/image?url=%2Fankit.png&w=640&q=75"
+                src="/aman.webp"
+                alt="Aman Gaade"
                 width={120}
                 style={{ "borderRadius": "50%" }}
 
             />
-            <h1 className="display-5 fw-bold text-body-emphasis">Hello, I am Ankit Jha</h1>
+            <h1 className="display-5 fw-bold text-body-emphasis">Hello, I am Aman</h1>
             <div className="col-lg-6 mx-auto">
 
                 <p className="lead mb-4">
@@ -20,7 +21,7 @@ const Hero = () => {
                 </p>
                 <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
 
-                    <button type="button" className="btn btn-primary btn-lg px-4 gap-3">
+                    <button type="button" className="btn btn-primary btn-lg px-4 gap-3" onClick={()=>window.open("/resume.pdf", "_blank")}>
                         My Resume
                     </button>
                     <a href="#contact" type="button" className="btn btn-outline-secondary btn-lg px-4">
